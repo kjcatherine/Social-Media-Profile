@@ -1,0 +1,427 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 100%;
+  background-color: #d1e7fe;
+  font-family: helvetica, sans-serif;
+}
+.container {
+  /* overall container*/
+  width: 100%;
+  height: 150vh;
+  margin: 60px auto 60px;
+  max-width: 1250px;
+  border-radius: 30px;
+  background-color: #fff;
+}
+
+/* setup of container sub divs*/
+.side-column,
+.middle-column,
+.right-column {
+  float: left;
+  padding: 10px;
+  height: 150vh;
+}
+.side-column {
+  width: 20%;
+  background-color: rgb(247, 247, 247);
+  border-radius: 30px 0px 0px 30px;
+}
+.right-column {
+  width: 20%;
+  background-color: white;
+  border-radius: 0px 30px 30px 0px;
+}
+.middle-column {
+  width: 60%;
+  /* background-color: rgb(253, 250, 250); */
+}
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* section 1- left column styling starts here*/
+.side-column .circle-img {
+  height: auto;
+  width: 70%;
+  position: relative;
+  top: 70px;
+  margin: 0 auto;
+}
+.side-column .circle-img img {
+  display: block;
+  height: 130px;
+  max-width: 130px;
+  border-radius: 100%;
+  border: 2px solid blue;
+  margin: 0 auto;
+}
+.side-column .circle-img img:hover {
+  opacity: 0.7;
+  transition: 2s;
+  cursor: crosshair;
+}
+.word-merge {
+  /*one div for Mitchs name and following details*/
+  margin-top: 80px;
+}
+.main-name {
+  /* Big Mitch*/
+  font-size: 0.8em;
+  text-align: center;
+  margin-top: 15px;
+  color: rgb(44, 43, 43);
+}
+/* one div for posts,follow etc*/
+.firstcol-contain {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 0px;
+  text-align: center;
+}
+.first-col {
+  /* one div for post infos*/
+  float: left;
+  width: 33%;
+  font-size: 10px;
+  color: rgb(44, 43, 43);
+  margin-top: 22px;
+}
+.first-col p {
+  font-size: 13px;
+  margin-top: 10px;
+}
+/* icons next to paragraphs start here, feed, explore etc*/
+.icon-link {
+  width: 100%;
+  height: 100px;
+  margin: 150px 0px 0px -24px;
+}
+i {
+  font-size: 18px;
+  position: relative;
+  left: 50px;
+  color: grey;
+}
+.feed,
+.top-post,
+.trending,
+.explore,
+.people,
+.notification,
+.direct,
+.stats {
+  display: grid;
+  grid-template-columns: 100px 10px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+a {
+  text-decoration: none;
+  color: grey;
+}
+.icon-link p {
+  font-weight: 500;
+  font-size: 14px;
+  white-space: nowrap;
+}
+/*----------------section one left col ends here-----------*/
+/*-------------section 2 starts here----------*/
+.input-wrap {
+  /* the search plus search icon container*/
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  background-color: rgb(243, 233, 233);
+  font-size: 0.8em;
+  border-radius: 6px;
+  color: #222122;
+  margin-left: 15px;
+  margin-top: 40px;
+  padding: 8px;
+  border: 1px solid rgb(146, 145, 145);
+}
+
+/* adding space to the search icon*/
+.fa-search {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+/* search box alone*/
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: rgb(243, 233, 233);
+  color: rgb(58, 54, 54);
+}
+::placeholder {
+  color: rgb(158, 154, 154);
+}
+.contain-cen {
+  /*one container for featured and popular*/
+  margin-top: 40px;
+  margin-left: 15px;
+}
+.line1-middle,
+.line1-middles {
+  /*thier individual containers (featured n popular*/
+  float: left;
+  width: 50%;
+  color: rgb(26, 25, 25);
+}
+
+h3 {
+  /*featured stories*/
+  font-size: 1.1em;
+}
+a.line1-middle {
+  /*a class in popular stories anchor tag*/
+  text-decoration: none;
+  background-color: #e7e4e6;
+  color: rgb(58, 57, 57);
+  text-align: center;
+  padding: 5px;
+  width: 130px;
+  font-weight: 550;
+  border-radius: 3px;
+  position: relative;
+  left: 200px;
+}
+a.line1-middle:hover {
+  /*a class in popular stories anchor tag*/
+  background-color: #128bf3;
+  cursor: crosshair;
+  color: #e7e4e6;
+  border-bottom: 5px solid grey;
+  transition: 1s;
+}
+
+.gallery1-contain {
+  /*big container for the first 4 images*/
+  width: 100%;
+  text-align: center;
+  margin-top: 80px;
+}
+.gallery2-contain {
+  /*big contnr for the last 2 sets of 6 images*/
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
+}
+.gallery1 {
+  /* individiual divs for first 4 images*/
+  position: relative;
+  left: 10px;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 5px;
+  float: left;
+  width: 23%;
+}
+.gallery2 {
+  /* individual divs for last 6 images(3 each)*/
+  position: relative;
+  left: 10px;
+  margin: 5px;
+  padding: 5px;
+  float: left;
+  width: 31%;
+}
+.gallery1 img {
+  /* first 4 images*/
+  width: 100%;
+  height: 200px;
+  border-radius: 7px;
+}
+.gallery2 img {
+  /*last 6 images*/
+  width: 100%;
+  height: 200px;
+  border-radius: 7px;
+}
+
+.layer {
+  /* a transparent layer on images to hover on*/
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+  opacity: 0.7;
+}
+.layer:hover {
+  background: rgba(243, 24, 24, 0.7);
+  transform: translateX(-20%);
+  transition: 1s;
+}
+.gallery1-contain:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.text2 {
+  /*latest feed text*/
+  padding: 25px 0 15px;
+  margin-left: 20px;
+}
+/*-----------middle section  2 ends here, section 3 begins*/
+
+.create {
+  /* one div for the create button plus cross icon*/
+  display: flex;
+  align-items: center;
+  background-color: #128bf3;
+  width: 150px;
+  color: white;
+  padding: 8px;
+  border-radius: 6px;
+  margin-left: 46px;
+  margin-top: 40px;
+}
+.create:hover,
+.btn:hover {
+  background-color: rgb(35, 56, 3);
+  color: rgb(240, 233, 233);
+  transition: 3s;
+  cursor: crosshair;
+}
+
+.fa-plus {
+  /* plus icon*/
+  padding-left: 7px;
+  padding-right: 7px;
+}
+.btn {
+  /*create button alone*/
+  text-decoration: none;
+  color: rgb(241, 237, 232);
+  background-color: #128bf3;
+  font-size: 0.8em;
+  width: 100%;
+  font-weight: 600;
+}
+
+.right-column .square-img {
+  /* Eva Benedict image container*/
+  height: auto;
+  width: 100%;
+  position: relative;
+  top: 5px;
+  margin: 0 auto;
+}
+.right-column .square-img img {
+  /*image itself*/
+  display: block;
+  height: 290px;
+  width: 200px;
+  border-radius: 10px;
+  padding: 3px;
+  margin: 0px;
+}
+
+.word-merge2 {
+  /* merging all Eva words to align thier top margin*/
+  margin-top: 30px;
+}
+.main-name2 {
+  /*Eva benedict*/
+  font-size: 13px;
+}
+.sub-col {
+  /* individual divs for 882 ,photos ,575 ,followers (4 divs*/
+  float: left;
+  padding: 3px;
+}
+.sub-col h2 {
+  font-size: 17px;
+}
+.sub-col p {
+  font-size: 15px;
+  color: grey;
+}
+.snd-col {
+  /*houses 882 photos and 575 followers (2 divs)*/
+  margin-top: 13px;
+  text-align: left;
+}
+
+.header {
+  margin-left: 8px;
+}
+
+.clear-all:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.eva-desc {
+  /* long text about Eva*/
+  margin-top: 20px;
+  /* background-color: green; */
+  margin-right: 34px;
+}
+
+.eva-desc p {
+  font-size: 13px;
+  /* background-color: red; */
+}
+.about-eva {
+  /*Eva location, profession and hobbies*/
+  padding-top: 35px;
+}
+
+.about-eva .hobbies {
+  margin-right: 34px;
+}
+
+/*******************RESPONSIVENESS*************************/
+@media screen and (max-width: 450px) {
+  .side-column {
+    width: 100%;
+  }
+  .right-column {
+    width: 100%;
+  }
+  .middle-column {
+    width: 50%;
+  }
+  .contain-cen {
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  .line1-middle,
+  .line1-middles {
+    /*thier individual containers (featured n popular*/
+    width: 40%;
+  }
+
+  a.line1-middle {
+    /*a class in popular stories anchor tag*/
+
+    left: 100px;
+  }
+  .gallery1 {
+    /* individiual divs for first 4 images*/
+    width: 40%;
+    left: 0;
+    margin: 0;
+    padding: 0;
+  }
+  .gallery1 img {
+    /* first 4 images*/
+    width: 100%;
+  }
+}
